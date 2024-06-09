@@ -14,7 +14,7 @@ Fixed::Fixed(const Fixed &fixed)
 Fixed &Fixed::operator=(const Fixed &fixed)
 {
     (void)fixed; // to avoid warning (unused parameter 'fixed')
-    std::cout << YELLOW << "Assignation operator called" << RESET << std::endl;
+    std::cout << YELLOW << "Copy assignation operator called" << RESET << std::endl;
     return *this;
 }
 
