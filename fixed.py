@@ -8,16 +8,18 @@ BLUE = "\033[1;34m"
 MAGENTA = "\033[1;35m"
 RESET = "\033[0m"
 
+file_name = "Basic1"
+
 def change_cpp_hpp_names(name):
     try:
-        os.rename("Basic.hpp", name + ".hpp")
-        os.rename("Basic.cpp", name + ".cpp")
+        os.rename(file_name + ".hpp", name + ".hpp")
+        os.rename(file_name + ".cpp", name + ".cpp")
         print(GREEN + "Basic.hpp and Basic.cpp renamed to " + name + ".hpp and " + name + ".cpp" + RESET)
     except:
         print(RED + "Error renaming Basic.hpp and Basic.cpp" + RESET)
 
 def change_all_string_Fixed_to_name_in_cpp(name):
-    file = "Basic.cpp"
+    file = file_name + ".cpp"
     try:
         with open(file, "r") as f:
             contents = f.read()
@@ -30,7 +32,7 @@ def change_all_string_Fixed_to_name_in_cpp(name):
         print(RED + "Error replacing Fixed and fixed with " + name + " in " + file + RESET)
 
 def change_all_string_Fixed_to_name_in_hpp(name):
-    file = "Basic.hpp"
+    file = file_name + ".hpp"
     try:
         with open(file, "r") as f:
             contents = f.read()

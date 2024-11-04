@@ -4,7 +4,7 @@ BLUE="\033[94m"
 RESET="\033[0m"
 file="Makefile"
 
-B_file="Basic"
+B_file="Basic1"
 
 cpfile1="~/Ft_Cannon/fixed.py"
 cpfile2="~/Ft_Cannon/$B_file.cpp"
